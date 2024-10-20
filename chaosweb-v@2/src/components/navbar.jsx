@@ -48,9 +48,6 @@ const Navbar = () => {
   };
 
   // Handle showing the popup
-  const handleClickMe = () => {
-    setShowPopup(true); // Show the popup when "Click Me" is clicked
-  };
 
   return (
     <>
@@ -179,9 +176,7 @@ const Navbar = () => {
         <div
           className="nav-item"
           id="click-me"
-          onClick={() => {
-            handleClickMe();
-          }}
+          onClick={() => handleNavigate("/chaosmania")}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +192,7 @@ const Navbar = () => {
               fill="#f2f2f2"
             />
           </svg>
-          <span>Click Me</span>
+          <span>ChaosMania</span>
         </div>
         {/* Treasure Button end */}
 
